@@ -53,7 +53,7 @@ header aside {
 
 }
 
-.projects a, .contact, #about span {
+.projects a, .contact {
   color: #fff;
   text-decoration: none;
     box-shadow: inset 0 -0.2em 0 0 #B4008C;
