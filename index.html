@@ -7,6 +7,7 @@
   <title>Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Rakkas&family=Rubik:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheet.css">
 
 </head>
@@ -19,18 +20,81 @@
   <main>
     <section class="grid">
       <h1 class="title">Ross Kendall-Selwyn
-      Web Developer</h1>
-      <h2 class="projects"><a href="projects.html">Projects</a></h2>
-      <p>Hi, I'm Ross. I'm a Web Developer learning as I go. I love CSS, HTML and SASS. I understand JavaScript and I'm learning React so that I can make more interactive UI's. Here you'll find projects that I've completed and a description about how I built them.</p>
+        Front End Web Developer</h1>
+      <div class="procon">
+        <h2 class="projects"><a href="#projects">Projects</a></h2>
+        <h2 class="contact">Contact</h2>
+      </div>
+      <p id="about">Hi, I'm Ross!<br> I can code in CSS, HTML and SASS and JavaScript. I hold a bachelors degree in <span>Marketing </span>from the University of Colorado and help businesses achieve their high level goals through
+        <span>intelligent</span> marketing decisions and <span>effective</span> web design. Below you'll find some projects that I've completed and a description about how I built them.</p>
+      <div id="reveal">
+        <span><a href="mailto:rk.selwyn@gmail.com" subject="Portfolio Contact">email me: rk.selwyn@gmail.com</a><span>
+            <span><a href="https://github.com/RossKS/portfolio" target="_blank">view my code:<br> Github</a></span>
+      </div>
     </section>
+    <section class="section-2" id="projects">
+      <div class="firstview">
+        <img src="images/firstview homepage.png" />
+        <article>
+          <h2>Firstview Lettings Ltd</h2>
+          <!-- <h3>View code on Github</h3> -->
+          <h3>Website built using:</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap 4</li>
+            <li>SASS</li>
+            <li>PHP</li>
+          </ul>
+          <!-- <a role="button" href="firstview.html">View Project</a> -->
+          <a role="button" href="wwww.firstviewlettings.co.uk">View Live Site</a>
+          <a role="button" href="">View GitHub Repo</a>
+        </article>
+      </div>
+      <span>Colour Palette</span>
+      <article>
+        <div>
+        </div>
+        <span>#B22222</span>
+        <div>
+        </div>
+        <span>#EEE</span>
+        <div>
+        </div>
+        <span>#0B2149</span>
+      </article>
+      <article>
+
+
+        <span>Raleway</span>
+        <span>Lato</span>
+      </article>
+    </section>
+    <!-- <img src="images/services-cards.jpg"> -->
+
+    <!-- <span>Projects</span> -->
+    <!-- <span class="g2">Grid 2</span> -->
+
+
+    <!-- <p>This is project was for a private residental lettings company that was still using its original site from 2004. This gave me loads of opportunity to try new things and learn different techniques. It's a simple but effective design focused on simplicity and functionality. I chose to code the contact form using PHP allowing me to sanitze data server side and using HTML5's buit-in functions to validate input on the front-end.</p> -->
+    <!-- <span class="g3">Grid 3</span> -->
+
+
 
 
   </main>
 
 
   <footer>
-  </footer>
 
+  </footer>
+  <script>
+    document.querySelector('.contact').addEventListener("click", function() {
+      document.querySelector('#reveal').style.display = 'inline-block';
+    });
+  </script>
 </body>
+
 
 </html>

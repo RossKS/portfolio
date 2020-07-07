@@ -1,68 +1,240 @@
 * {
   margin:  0;
+  box-sizing: border-box;
 }
 
 main {
-  background: rgb(11,60,90);
-      color: #fff;
+  background:
+  #393e46;
+  color: #fff;
+  font-family: "Rubik", Serif;
 }
+
+html {
+  background:
+  #eee;
+}
+
+header aside {
+  position: fixed;
+  right: 0;
+  top: 25vh;
+  display: flex;
+  flex-direction: column;
+}
+
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 10vw 1fr 1fr ;
-  grid-template-rows: 50px 200px 1fr 1fr;
+  grid-template-rows: 50px 200px 1fr 50px;
   gap: 15px 10px;
   width: 90%;
   margin: 0 auto;
+  height: 95vh;
 }
 
+
+
 .title {
-  font-family: "Rubik", Serif;
-  font-size: 3.5rem;
-  grid-row-start: 2;
-  grid-column-start: 1;
-  grid-column-end: 4;
+  font-size: 3em;
+  grid-row: 2;
+  grid-column: 1 / span 2;
+
   text-shadow: -10px 3px black;
 }
 
-.projects {
-  font-family: "Rubik", Serif;
-  font-size: 2.5rem;
+.procon {
+  font-size: 1.8em;
   grid-row-start: 3;
   grid-column-start: 1;
   grid-column-end: 2;
-  align-self: center;
-  padding-bottom: 5px;
-  box-shadow: inset 0 -0.2em 0 0 #B4008C;
+  padding: 2vw;
+
 }
 
-.projects > a {
+.projects a, .contact, #about span {
   color: #fff;
   text-decoration: none;
+    box-shadow: inset 0 -0.2em 0 0 #B4008C;
+    transition-duration: .5s;
 }
 
-.projects:hover {
-  transition-duration: .3s;
+.projects a:hover, .contact:hover {
+
   box-shadow: inset 0 -0.4em 0 0 #B4008C;
+  cursor: pointer;
 }
 
-.grid p {
+#reveal {
+  font-size: 1.5rem;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  display: none;
+  transform:
+  translateY(150px);
+  transition-duration: 1s;
+  line-height: 30px;
+  padding: 2vw;
+}
+
+#reveal a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#about {
   font-family: "IBM Plex Sans", Sans-serif, "Helvetica Neue", sans-serif;
-  font-size: 1.8rem;
-  grid-column-start: 4;
+  font-size: 1.5em;
+  grid-column-start: 3;
   grid-column-end: 6;
   grid-row-start: 3;
   grid-row-end: 4;
 }
 
-@media (max-width: 480px){
+.section-2 {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #eee;
+  color: #393e46;
+}
+
+.firstview {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+    line-height: 30px;
+    background-color: #eee;
+    color: #393e46;
+}
+
+
+.firstview h2 {
+  width: 100%;
+  font-size: 1.8em;
+}
+
+.firstview h3 {
+  font-family: "IBM Plex Sans", Sans-serif, "Helvetica Neue", sans-serif;
+}
+
+.firstview a {
+  text-decoration: none;
+  color:inherit;
+  padding: 6px 8px;
+  border: 2px solid #B4008C;
+  border-radius: 4px;
+  background: #B4008C;
+  color: #eee;
+}
+
+.firstview a:hover {
+  color: #B4008C;
+  background-color: #eee;
+}
+
+
+
+.section-2  span:nth-of-type(1) {
+  padding: 20px;
+  font-size: 1.7em;
+}
+
+article div {
+  padding: 20px;
+  background: #b22222;
+  display: inline-block;
+  width: 10px;
+  border-radius: 50%;
+  box-shadow: 4px 3px 12px black;
+  margin: 15px;
+}
+
+article span {
+  padding: 20px;
+  font-family: 'IBM Plex Sans', Sans-serif;
+  font-size: 1em;
+}
+
+article div:nth-of-type(2){
+  background: #eee;
+  display: inline-block;
+}
+
+article div:nth-of-type(3) {
+  background: #0b2149;
+}
+section.section-2 > article {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+}
+
+section.section-2 > article span:first-of-type {
+  font-size: 1em;
+}
+
+ article span:nth-of-type(4) {
+  font-family: "raleway", sans-serif;
+}
+article span:nth-of-type(5) {
+  font-family: "lato", sans-serif;
+}
+
+ul {
+  margin-bottom: 10px;
+}
+
+img {
+  width: 60%;
+  min-width: 300px;
+  padding-left: 0;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 12px rgb(90,90,90);
+  border-radius: 2px;
+  transition: .6s ease-out;
+}
+
+img:hover {
+  width: 65%;
+}
+
+footer {
+  background:
+      #393e46;
+    }
+
+
+
+@media (max-width: 500px){
   .title {
     font-size: 1.5rem;
+    grid-column: 1 / span 5;
   }
-  .grid p {
+  #about {
+    font-size: 1em;
+  }
+  .projects, .contact {
     font-size: 1rem;
   }
-  .projects {
-    font-size: 1rem;
+  #reveal {
+    font-size: .6em;
+    transform:
+    translateY(80px);
+  }
+  img {
+    margin: 0;
+    width: 100%;
+  }
+  .firstview {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .firstview  h2 {
+    padding-top: 30px;
   }
 }
