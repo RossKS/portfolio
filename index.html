@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Rakkas&family=Rubik:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link rel="stylesheet" href="stylesheet.css">
 
 </head>
@@ -15,9 +17,16 @@
 <body>
   <header>
 
+
   </header>
 
+
   <main>
+    <!-- <div class="menu">
+
+
+    <div class="menu-burger"></div>
+    </div> -->
     <section class="grid">
       <h1 class="title">Ross Kendall-Selwyn
         Front End Web Developer</h1>
@@ -55,6 +64,14 @@
       </div>
 
     </section>
+
+      <button id="btnScrollToTop">
+        <span class="material-icons">
+arrow_upward
+</span>
+
+      </button>
+
   </main>
 
 
@@ -64,6 +81,18 @@
     document.querySelector('.contact').addEventListener("click", function() {
       document.querySelector('#reveal').style.display = 'inline-block';
     });
+
+    const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+      btnScrollToTop.addEventListener("click", function() {
+        // window.scrollTo(0, 0);
+
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+        });
+      });
   </script>
 </body>
 
