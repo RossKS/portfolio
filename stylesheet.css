@@ -34,8 +34,6 @@ header aside {
   height: 95vh;
 }
 
-
-
 .title {
   font-size: 3em;
   grid-row: 2;
@@ -50,10 +48,9 @@ header aside {
   grid-column-start: 1;
   grid-column-end: 2;
   padding: 2vw;
-
 }
 
-.projects a, .contact, #about span {
+.projects a, .contact {
   color: #fff;
   text-decoration: none;
     box-shadow: inset 0 -0.2em 0 0 #B4008C;
@@ -73,7 +70,7 @@ header aside {
   display: none;
   transform:
   translateY(150px);
-  transition-duration: 1s;
+  transition-duration: 1s ease-out;
   line-height: 30px;
   padding: 2vw;
 }
@@ -105,9 +102,9 @@ header aside {
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
-    line-height: 30px;
-    background-color: #eee;
-    color: #393e46;
+  line-height: 30px;
+  background-color: #eee;
+  color: #393e46;
 }
 
 
@@ -135,57 +132,11 @@ header aside {
   background-color: #eee;
 }
 
-
-
-.section-2  span:nth-of-type(1) {
-  padding: 20px;
-  font-size: 1.7em;
-}
-
-article div {
-  padding: 20px;
-  background: #b22222;
-  display: inline-block;
-  width: 10px;
-  border-radius: 50%;
-  box-shadow: 4px 3px 12px black;
-  margin: 15px;
-}
-
-article span {
-  padding: 20px;
-  font-family: 'IBM Plex Sans', Sans-serif;
-  font-size: 1em;
-}
-
-article div:nth-of-type(2){
-  background: #eee;
-  display: inline-block;
-}
-
-article div:nth-of-type(3) {
-  background: #0b2149;
-}
 section.section-2 > article {
   display: flex;
   flex-direction: row;
   width: 90%;
   margin: 0 auto;
-}
-
-section.section-2 > article span:first-of-type {
-  font-size: 1em;
-}
-
- article span:nth-of-type(4) {
-  font-family: "raleway", sans-serif;
-}
-article span:nth-of-type(5) {
-  font-family: "lato", sans-serif;
-}
-
-ul {
-  margin-bottom: 10px;
 }
 
 img {
@@ -197,16 +148,26 @@ img {
   box-shadow: 0px 0px 12px rgb(90,90,90);
   border-radius: 2px;
   transition: .6s ease-out;
+  transition-delay: .3s;
 }
 
 img:hover {
-  width: 65%;
+  width: 70%;
+}
+
+ul {
+  margin-bottom: 10px;
+}
+
+.section-2 div > p {
+  width: 70%;
+  margin: 10px auto 10px 30px;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 footer {
-  background:
-      #393e46;
-    }
+  background: #393e46;
+}
 
 
 
