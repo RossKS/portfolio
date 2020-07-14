@@ -10,10 +10,7 @@ main {
   font-family: "Rubik", Serif;
 }
 
-html {
-  background:
-  #eee;
-}
+
 
 /* Scroll to top shortcut */
 #btnScrollToTop{
@@ -41,7 +38,7 @@ html {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 10vw 1fr 1fr ;
-  grid-template-rows: 50px 200px 1fr 50px;
+  grid-template-rows: 50px 1fr 1fr 50px;
   gap: 15px 10px;
   width: 90%;
   margin: 0 auto;
@@ -61,7 +58,7 @@ html {
   grid-row-start: 3;
   grid-column-start: 1;
   grid-column-end: 2;
-  padding: 2vw;
+  padding-left: 2vw;
 }
 
 .projects a, .contact {
@@ -146,16 +143,17 @@ html {
   background-color: #eee;
 }
 
-section.section-2 > article {
+/* section.section-2 > article {
   display: flex;
   flex-direction: row;
   width: 90%;
   margin: 0 auto;
-}
+  padding-bottom: 25px;
+} */
 
 img {
   width: 60%;
-  min-width: 300px;
+  /* min-width: 300px; */
   padding-left: 0;
   margin-right: 40px;
   margin-bottom: 50px;
@@ -175,7 +173,7 @@ ul {
 
 .section-2 div > p {
   width: 70%;
-  margin: 10px auto 10px 30px;
+  margin: 10px auto 10px 40px;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -184,32 +182,62 @@ footer {
 }
 
 
-
+@media (max-width: 700px){
+  .title{
+     font-size: 2.7em;
+   }
+}
 @media (max-width: 500px){
+
   .title {
     font-size: 1.5rem;
     grid-column: 1 / span 5;
   }
+  .grid  {
+    grid-template-rows: 50px 150px 1fr 50px;
+  }
   #about {
     font-size: 1em;
   }
+  .procon {
+    grid-column: 1 / span 2;
+  }
   .projects, .contact {
-    font-size: 1rem;
+    font-size: 18px;
+  }
+  .arrow_drop_down, .arrow_right {
+    font-size: 18px;
   }
   #reveal {
     font-size: .6em;
     transform:
     translateY(80px);
   }
-  img {
+  .firstview img {
     margin: 0;
-    width: 100%;
+    width: 95%;
+  }
+  .firstview > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
   }
   .firstview {
     margin: 0 auto;
     width: 90%;
   }
-  .firstview  h2 {
+  .firstview h2 {
     padding-top: 30px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .firstview  a {
+    margin: 8px 0px;
+    text-align: center;
+  }
+  .section-2 div > p {
+    margin: 30px auto;
+    width: 80%;
   }
 }

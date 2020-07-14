@@ -27,12 +27,19 @@
 
     <div class="menu-burger"></div>
     </div> -->
+    <button id="btnScrollToTop">
+      <span class="material-icons">
+      arrow_upward
+      </span>
+    </button>
     <section class="grid">
       <h1 class="title">Ross Kendall-Selwyn
         Front End Web Developer</h1>
       <div class="procon">
         <h2 class="projects"><a href="#projects" tabindex="1">Projects</a></h2>
-        <h2 class="contact" role="button" tabindex="2">Contact</h2>
+        <h2 class="contact" role="button" tabindex="2"><span class="material-icons arrow_right">
+        arrow_right
+        </span>Contact</h2>
       </div>
       <p id="about">Hi, I'm Ross!<br> I code CSS, HTML and SASS and JavaScript. Additionally, I hold a bachelors degree in Marketing from the University of Colorado and help businesses achieve their high level goals through
         intelligent marketing decisions and effective web design. Below you'll find some projects that I've completed and a description about how I built them.</p>
@@ -63,14 +70,10 @@
         <p>For Firstview Lettings Ltd I created a website that reflected their simplicity with an easy to use UX and informative copy. The goal for the site was to create a modern website with increased usability and clarity. Overall the business wanted to attract and convert more visitors. Firstview Lettings had recently pivoted its business model and wanted a site that reflected their new direction.</p>
       </div>
 
+
     </section>
 
-      <button id="btnScrollToTop">
-        <span class="material-icons">
-arrow_upward
-</span>
 
-      </button>
 
   </main>
 
@@ -80,12 +83,14 @@ arrow_upward
   <script>
     document.querySelector('.contact').addEventListener("click", function() {
       document.querySelector('#reveal').style.display = 'inline-block';
+      document.querySelector('.arrow_right').innerHTML = 'arrow_drop_down';
     });
+
+
 
     const btnScrollToTop = document.querySelector("#btnScrollToTop");
 
       btnScrollToTop.addEventListener("click", function() {
-        // window.scrollTo(0, 0);
 
         window.scrollTo({
           top: 0,
@@ -93,6 +98,8 @@ arrow_upward
           behavior: "smooth"
         });
       });
+
+
   </script>
 </body>
 
