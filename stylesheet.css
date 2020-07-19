@@ -35,6 +35,15 @@ main {
 
 /* end scroll to to top shortcut */
 
+#name {
+  transform: rotate(-90deg);
+  position: fixed;
+  right: 10px;
+  top: 0;
+  margin-top: 76px;
+  background-color: #B4008C;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 10vw 1fr 1fr ;
@@ -49,7 +58,6 @@ main {
   font-size: 3em;
   grid-row: 2;
   grid-column: 1 / span 2;
-
   text-shadow: -10px 3px black;
 }
 
@@ -84,6 +92,7 @@ main {
   transition-duration: 1s ease-out;
   line-height: 30px;
   padding: 2vw;
+  font-family: "Source Code Pro", sans-serif;
 }
 
 #reveal a {
@@ -92,7 +101,7 @@ main {
 }
 
 #about {
-  font-family: "IBM Plex Sans", Sans-serif, "Helvetica Neue", sans-serif;
+  font-family: "Source Code Pro", sans-serif;
   font-size: 1.5em;
   grid-column-start: 3;
   grid-column-end: 6;
@@ -125,17 +134,17 @@ main {
 }
 
 .firstview h3 {
-  font-family: "IBM Plex Sans", Sans-serif, "Helvetica Neue", sans-serif;
+  font-family: "Source Code Pro", sans-serif;
 }
 
 .firstview a {
   text-decoration: none;
-  color:inherit;
   padding: 6px 8px;
   border: 2px solid #B4008C;
   border-radius: 4px;
   background: #B4008C;
   color: #eee;
+  box-shadow: 1px 3px 8px .2px #393E46;
 }
 
 .firstview a:hover {
@@ -143,17 +152,9 @@ main {
   background-color: #eee;
 }
 
-/* section.section-2 > article {
-  display: flex;
-  flex-direction: row;
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 25px;
-} */
 
-img {
+img:first-of-type {
   width: 60%;
-  /* min-width: 300px; */
   padding-left: 0;
   margin-right: 40px;
   margin-bottom: 50px;
@@ -174,7 +175,8 @@ ul {
 .section-2 div > p {
   width: 70%;
   margin: 10px auto 10px 40px;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "Source Code Pro", sans-serif;
+  font-size: 18px;
 }
 
 footer {
@@ -222,6 +224,11 @@ footer {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+
+  }
+
+  .section-2 > article  {
+    line-height: 50px;
   }
   .firstview {
     margin: 0 auto;
