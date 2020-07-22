@@ -47,7 +47,7 @@ background-color: #B4008C;
 font-family: "Source Code Pro", sans-serif;
 padding: 3px;
 width: 40px;
-height: 90px;
+height: 120px;
 }
 
 #name a {
@@ -74,7 +74,7 @@ height: 90px;
   font-size: 3em;
   grid-row: 1 / span 2;
   grid-column: 1 / span 2;
-  text-shadow: -10px 3px black;
+  /* text-shadow: -10px 3px black; */
   align-self: center;
 }
 #about {
@@ -144,6 +144,17 @@ height: 90px;
   color: #393e46;
 }
 
+.project-number {
+  font-size: 100px;
+  opacity: 30%;
+  position: absolute;
+  right: 0px;
+  bottom: -550px;
+
+  transform: rotate(-90deg);
+
+}
+
 .firstview {
   display: flex;
   flex-direction: row;
@@ -208,9 +219,43 @@ ul {
   font-family: "Source Code Pro", sans-serif;
   font-size: 18px;
 }
+
+
 .firstview  article {
   line-height: 35px;
 }
+
+section:nth-of-type(3) {
+  padding-bottom: 50px;
+}
+
+.process {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  border-bottom: solid 5px #B4008C;
+}
+
+.process > div {
+  background-color: #eee;
+  flex-wrap: wrap;
+  width: 40%;
+  flex-basis: 1;
+  border-radius: 4px;
+  color: #393e46;
+  font-family: "Source Code Pro", sans-serif;
+  margin: 5px;
+  padding: 10px;
+
+
+}
+
+/* .process > div:nth-of-type(2) {
+  transform: translateY(200px);
+} */
+
+
 
 footer {
   background: #393e46;
@@ -230,10 +275,13 @@ footer {
   .grid  {
     grid-template-rows: 50px 150px 1fr 50px;
   }
+
   #about {
     font-size: 1em;
+    grid-column: 1 / span 4;
+    align-items: stretch;
   }
-  .procon {
+  /* .procon {
     grid-column: 1 / span 2;
   }
   .projects, .contact {
@@ -246,7 +294,7 @@ footer {
     font-size: .6em;
     transform:
     translateY(80px);
-  }
+  } */
   .firstview img {
     margin: 0;
     width: 95%;
