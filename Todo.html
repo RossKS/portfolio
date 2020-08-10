@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    
+    <link type="javascript" href="todo.js"/> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <main>
+        <header>
+            <span id="date"></span> 
+        </header>
+        
+        <div id="todoList">
+            <h1>{{ title }}</h1>
+            
+            <div id="inputField">
+                
+                <input v-model="newItem" type="text" name="addItem" v-on:keypress.enter="addNew">
+                
+                <button type="button" v-on:click="addNew">
+                    Add Item </button>
+                <p v-show="error" class="error">Oops!, you submitted a blank entry.</p>
+            </div>
+
+            
+            <ol>
+                <li 
+                    v-for="(item, index) in todoList" v-bind:class="[item.important ? 'important': 'notImportant', item.type]">{{ item.itemTodo }}
+                    <span  id="deleteCard" class="material-icons" v-on:click="todoList.splice(index, 1)">
+                        check_circle_outline
+                        </span>
+                    <span class="material-icons" id="setImportance" role="button" v-on:click="setImportance(item)">
+                        priority_high
+                        </span>
+                </li>   
+            </ol>
+        </div>
+       
+
+    </main>
+    <footer> Provided by: 
+        Ross Kendall-Selwyn
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="todo.js"></script>
+    
+</body>
+</html>
+

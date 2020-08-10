@@ -1,0 +1,127 @@
+:root {
+    --red: #e44e42;
+    --grey: #1e1e1e;
+    --lightgrey: #A6a6a6;
+    --green: #87cb84;
+    --bodyfont: 'overpass', sans-serif;
+}
+
+* {
+    box-sizing: content-box;
+}
+
+body {
+    background-color: #eee;
+   
+    height: 100vh;
+    font-family: var(--bodyfont);
+    font-weight: 300;
+}
+
+header {
+    font-size: 24px;
+    color: var(--grey);
+    opacity: .8;
+    line-height: 1.5em;
+    padding: .7em;
+}
+h1 {
+    font-family: var(--bodyfont);
+    font-weight: 700;
+    
+    /* font-family: 'Courier New', Courier, monospace; */
+    text-align: center;
+    font-size: 32px;
+    
+}
+
+
+div:last-child {
+    margin: 0 auto;
+    width: 70%;
+}
+
+ol {
+    margin: 3em 0;
+}
+
+#inputField {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+input {
+    flex-grow: 3;
+    padding: 5px;
+    border-radius: 4px;
+    border: 2px solid var(--lightgrey);
+    outline: none;
+    width: 70%;
+    
+}
+
+button {
+    padding: 5px;
+    border-radius: 4px;
+    border: 2px solid var(--green);
+    outline: none;
+    background-color: var(--green);
+    color: white;
+    cursor: pointer;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    flex-grow: 1;
+}
+
+li {
+    box-shadow: 10px 10px 30px var(--lightgrey);
+    margin: 20px 0;
+    padding: 1.2em;
+    border-radius: 4px;
+    width: 91.5%;
+    position: relative;
+    background-color: #fff;
+}
+
+.error {
+    color: #e44e42;
+}
+
+
+#deleteCard,#setImportance{
+   
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -15px;
+    cursor: pointer;
+    color: var(--green);
+    padding: 2px 4px;
+    transition: all .5s ease-in;
+    padding: 5px;
+    /* background-color: var(--lightgrey); */
+    border-radius: 8px;
+}
+#setImportance {
+    right: 65px;
+    color: #e44e42;
+}
+
+.important {
+    background-image: linear-gradient(90deg, #ED8F03 75%, #FFB75E);
+}
+#deleteCard:hover {
+    transform: rotate(360deg);
+}
+
+footer {
+    text-align: center;
+
+}
+
+
