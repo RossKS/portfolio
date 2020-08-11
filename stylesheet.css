@@ -1,6 +1,7 @@
 :root {
   --grey: #2e383f;
   --white: #fff;
+  --pink: #b4008c;
 }
 
 * {
@@ -16,7 +17,10 @@ main {
   background: var(--grey);
   color: white;
   font-family: "overpass", sans-serif;
-
+}
+p {
+  font-family: "Source Code Pro", sans-serif;
+  font-size: 18px;
 }
 
 /* Scroll to top shortcut */
@@ -70,7 +74,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 15px 30px;
+  gap: 20px 30px;
   width: 90%;
   margin: 0 auto;
   height: 95vh;
@@ -88,7 +92,7 @@ header {
   font-size: 1.5em;
   grid-column: 3 / span 2;
   grid-row: 2 / span 3;
-  align-self: center;
+  align-self: start;
 }
 
 section:nth-of-type(2) {
@@ -134,14 +138,14 @@ h3 {
 .firstview a, section:last-of-type a {
   text-decoration: none;
   padding: 6px 8px;
-  border: 2px solid #b4008c;
+  border: 1px solid #b4008c;
   border-radius: 4px;
   background: #b4008c;
   color: #eee;
   box-shadow: 1px 3px 8px 0.2px #393e46;
 }
 
-.firstview a:hover {
+.firstview a:hover, footer a:hover, section:nth-of-type(3) a:hover {
   color: #b4008c;
   background-color: #eee;
 }
@@ -160,7 +164,7 @@ ul {
 section:nth-of-type(2)  p {
   width: 60%;
   margin: 0 auto 1.5em 3.2em;
-  font-family: "Source Code Pro", sans-serif;
+
   font-size: 18px;
   line-height: 1.7em;
 }
@@ -173,7 +177,7 @@ section:nth-of-type(2)  p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   width: 90%;
   justify-content: space-between;
   line-height: 30px;
@@ -184,14 +188,61 @@ section:nth-of-type(3) {
   margin-top: 50px;
 }
 
+section:nth-of-type(3) div:last-of-type {
+  width: 60%;
+  line-height: 1.7em;
+}
+
+section:nth-of-type(3) p {
+  margin: 0 auto 1.5em 3.2em;
+}
+
 #project2 div {
-  padding: 1.5em;
   line-height: 35px;
+  width: 35%;
+
+
 }
 
 footer {
   background: var(--grey);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
 }
+
+footer div{
+  width: 100%;
+  background: #eee;
+  font-family: 'Overpass', sans-serif;
+  padding: 1.3em;
+  min-height: 250px;
+  text-align: center;
+}
+
+footer h2 {
+  padding: 1.2em;
+}
+
+footer a {
+  padding: .7em .9em ;
+  background-color: var(--pink);
+  border-radius: 6px;
+  text-decoration: none;
+  color: #eee;
+  margin: 2em 0;
+  font-family: 'Source Code Pro', sans-serif;
+  border: 1px solid var(--pink);
+  box-shadow: 1px 3px 8px 0.2px #393e46;
+}
+
+footer a:active {
+  background-color: var(--grey);
+  color: #eee;
+}
+
+
 
 @media (max-width: 700px) {
   .title {
