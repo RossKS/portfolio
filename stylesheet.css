@@ -135,7 +135,7 @@ h3 {
   font-family: "Source Code Pro", sans-serif;
 }
 
-.firstview a, section:last-of-type a {
+.firstview a, #project2 > div a {
   text-decoration: none;
   padding: 6px 8px;
   border: 1px solid #b4008c;
@@ -200,8 +200,6 @@ section:nth-of-type(3) p {
 #project2 div {
   line-height: 35px;
   width: 35%;
-
-
 }
 
 footer {
@@ -253,7 +251,9 @@ footer a:active {
   .title {
     font-size: 1.5rem;
     grid-column: 1 / span 5;
+    padding: 1em;
   }
+
   .grid {
     grid-template-rows: 50px 150px 1fr 50px;
     padding: 1em;
@@ -262,20 +262,24 @@ footer a:active {
   #about {
     font-size: 1em;
     grid-column: 1 / span 4;
+    grid-row: 3 / span 2;
     align-items: stretch;
+    transform: translateY(-50px);
   }
 
    img {
     margin: 0 auto;
     width: 100%;
   }
-  .firstview > article {
+  .firstview > article, #project2 > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
   }
-  .firstview {
+
+
+  .firstview, #project2 div {
     margin: 0 auto;
     width: 90%;
   }
@@ -285,7 +289,7 @@ footer a:active {
     justify-content: center;
     margin: 0 auto;
   }
-  .firstview a {
+  .firstview a, #project2 a {
     margin: 8px 0px;
     text-align: center;
   }
@@ -296,4 +300,10 @@ footer a:active {
   .project-number {
     top: 0;
   }
+  section:nth-of-type(3) div:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
 }
