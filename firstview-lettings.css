@@ -1,0 +1,355 @@
+body {
+  margin: 0;
+  /* display: flex;
+  flex-direction: column; */
+  min-height: 100vh;
+}
+
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 0;
+}
+
+
+
+
+.main-header {
+  border-bottom: solid 3px firebrick;
+  padding-bottom: 3px;
+  border-top: solid 3px firebrick;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:  white;
+
+}
+
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.main-nav a {
+  padding: 20px;
+  text-decoration: none;
+  font-family: verdana, sans-serif;
+  color: black;
+  font-size:16px;
+}
+
+.main-nav:last-child {
+  margin-right: 15px;
+}
+
+
+.dropdown ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Style The Dropdown Button */
+
+ /* .dropbtn {
+  color: black;
+  padding: 0;
+  font-size: 16px;
+  font-family: verdana, sans-serif;
+  list-style: none;
+} */
+
+.dropdown-content {
+ display: none;
+ position: absolute;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,10);
+ z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: verdana, sans-serif;
+}
+
+.dropdown-content a:hover {
+  background-color: firebrick;
+}
+
+/* .dropbtn:hover {background-color: white} */
+
+.dropdown:hover  .dropdown-content  {
+  display: block;
+  width: 200px;
+}
+
+.dropdown a {
+background-color: white;
+  text-align: center;
+  font-family: verdana;
+}
+
+/* end dropdown style */
+h1 {
+  font-family: "Arimo", sans-serif;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 10px;
+  font-family: 'Arimo', sans-serif;
+  text-align: center;
+
+  font-size: 1.8rem;
+}
+
+main {
+  margin-top: 60px;
+  padding-top: 30px;
+}
+
+.main-footer a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: silver;
+  font-size: 12px;
+}
+
+.webdev {
+  text-align: center;
+  color: silver;
+  font-size: 12px;
+  font-style: verdana;
+  text-decoration-style: none;
+}
+
+
+.intro {
+  display: flex;
+}
+
+.flex {
+  /* align-items:flex-start; */
+  display: flex;
+  /* flex-direction: row; */
+  /* height: 30vh; */
+}
+
+.cstandard {
+  width: 85%;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 18px
+}
+.normal {
+  width: 80%;
+  margin: 0 auto;
+  font-family: verdana, sans-serif;
+  padding: 10px;
+}
+
+
+.intro p {
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+/* services styling */
+.subp-title {
+  margin-top: 20px;
+  padding-top: 10px;
+  font-family: 'Arimo', sans-serif;
+  color: black;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+/* end services styling */
+
+  form {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  .contact-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    align-items: flex-start;
+  }
+
+  div .details {
+    width: 25%;
+    padding: 20px;
+    font-family: Verdana;
+    border: solid 3px firebrick;
+    color: black;
+    line-height: 20px;
+  }
+
+  .contact-form{
+    width: 75%;
+    padding: 20px;
+    font-family: verdana;
+  }
+
+  .lakeview, .marine-gardens {
+    display: flex;
+    font-family: verdana;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+
+  .additional {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+
+   .subheading {
+    margin: 0 auto;
+    font-family: "Arimo", sans-serif;
+    font-weight: bold;
+  }
+
+  .property {
+    text-align: left;
+    padding: 10px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  .image{
+    float: right;
+    padding: 10px;
+    margin-top: 20px;
+
+  }
+
+  div .image:nth-of-type(n+3) {
+    float: left;
+  }
+
+
+
+
+/* Media Queries */
+
+@media (min-width: 769px) {
+  .wrap {
+  min-height: calc(100vh - 40px);
+  }
+
+
+  .index-title {
+    color: black;
+    background:
+      url("images/key-in-door-cropped.webp"), no-repeat;
+      background-size: cover;
+      height: 450px;
+
+
+      font-family: 'Arimo', sans-serif;
+  }
+
+  .index-title h1 {
+      color: #fff;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding-top: 160px;
+      font-family: 'Arimo', sans-serif;
+      margin-top: 0;
+    }
+
+  .services ul {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin:  0 auto;
+    align-items: center;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+
+  .services li {
+    font-family: 'Helvetica Neue';
+    margin: 5px;
+    list-style: none;
+    font-size: 20px;
+  }
+
+  span h2 {
+    padding-bottom: 0;
+  }
+
+  .contact h2 a {
+    text-decoration: none;
+    color: firebrick;
+    margin-bottom: 0;
+    font-family:'Arimo', sans-serif;
+  }
+
+  .contact p, #email {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding-top: none;
+    font-size: 18px;
+    display: block;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  .contact p {
+    text-decoration: none;
+  }
+
+  .contact {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+
+  }
+}
+
+
+/* End dropdown */
+
+.main-header::after {
+content: "";
+display: table;
+clear: both;
+
+}
+
+main::after {
+  content: "";
+  display: table;
+  clear: both;
+}

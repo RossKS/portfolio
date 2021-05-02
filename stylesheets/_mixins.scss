@@ -1,0 +1,42 @@
+// Variables
+$color-text: #0b2149;
+$primary-font-stack: "Lato", sans-serif, "Helvetica Neue", sans-serif;
+
+// Mixins
+@mixin font-base-style() {
+  color: $color-text;
+  font-family: $primary-font-stack;
+}
+@mixin button($border, $width: 100%, $backgroundcolor: #fff, $color: #fff ){
+  width: $width;
+  background-color: $backgroundcolor;
+  border: 1px solid $border;
+  color: $color;
+  border-radius: .25em;
+  padding: .375rem .75rem;
+  text-align: center;
+  margin: 2px;
+  font-size: 0.9em;
+  display: inline-block;
+}
+@mixin flex-row() {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @content;
+}
+
+@mixin red-border() {
+  border-bottom: solid 3px firebrick;
+  border-top: solid 3px firebrick;
+}
+@mixin landing-image($url) {
+  background-image: url($url);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@mixin landing-image-style() {
+  height: 450px;
+  margin-top: 5.8rem;
+}

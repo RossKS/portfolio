@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/firstview-lettings.min.css">
+  <title>Oops!</title>
+  <link rel="shortcut icon" type="image/png" href="images/keys-logo.png">
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <a href="firstview-lettings-home.html"><img src="images/main-logo.jpg" id="main-logo" alt="firstview lettings logo"></a>
+      <nav class="nav flex-row flex-sm-row">
+        <a class="flex-sm-fill text-sm-center nav-link active" href="firstview-lettings-home.html">Home</a>
+        <a id="properties" class="flex-sm-fill text-sm-center nav-link" href="properties.html">Properties</a>
+        <!-- <div id="tenants" class="btn-group"> -->
+        <a role="button" class="btn" id="tenants" href="tenant-services.html">Tenants</a>
+        <!-- <button type="button" id="dropdown" class="btn  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="tenancy_application.html">Tenancy Applications</a>
+            <a class="dropdown-item" href="tenant-enquiries.html">Tenant Enquiries</a>
+          </div>
+        </div> -->
+        <!-- <div id="landlords" class="btn-group"> -->
+        <a role="button" class="btn" id="landlords" href="landlord-services.html">Landlords</a>
+        <!-- <button type="button" id="arrow" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="tenancy_application.html">Tenancy Applications</a>
+            <a class="dropdown-item" href="tenant-introduction-service.html">Tenant Introduction Service</a>
+            <a class="dropdown-item" href="inventory-preparation-services.html">Tenant Introduction & Inventory Preparation Service</a>
+            <a class="dropdown-item" href="letting-management.html">Letting Management Service</a>
+          </div>
+        </div> -->
+        <div class="dropdown">
+          <button id="services-tab" class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menu &#9776;
+          </button>
+          <div class="dropdown-menu" aria-labelledby="services-tab">
+            <a class="dropdown-item" href="landlord-services.html">Landlord Services</a>
+            <a class="dropdown-item" href="tenant-services.html">Tenant Services</a>
+            <a class="dropdown-item" href="properties.html">Properties</a>
+            <a class="dropdown-item" href="about-firstview-lettings.html">About</a>
+            <a class="dropdown-item" href="php/index-contact.php">Contact</a>
+          </div>
+        </div>
+        <a id="about" class="flex-sm-fill text-sm-center nav-link" href="about-firstview-lettings.html">About</a>
+        <a id="contact" class="hide-sm flex-sm-fill text-sm-center nav-link" href="php/index-contact.php">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <div class="errorpage cstandard">
+        <h1>Whoops! 404 Page Not Found</h1>
+        <p>Looks like the link you've clicked isn't working properly, we're sorry!
+          Click <a role="button" href="firstview-lettings-home.html">here</a> to go back to our homepage, or use the navigation at the top of this page.</p>
+      </div>
+
+    </main>
+
+  </div>
+  <footer class="main-footer">
+    <div>
+      <span>Enquiries</span><br>
+      <a href="tel:07834342897">07834 342897</a><br>
+      <a href="mailto:firstview.let@btinternet.com">firstview.let@btinternet.com</a>
+    </div>
+    <span>
+      Firstview Lettings Ltd.<br>
+      Registration No: 5098005<br>
+      Registered Office:<br>
+      367B Church Rd, Frampton Cotterell,<br>
+      Bristol, BS36 2AQ
+    </span>
+    <span>&copy; Firstview Lettings Ltd 2004-<span id="year"></span></span>
+    <div>
+      <a href="legal.html" id="legal">Legal Notices</a><br>
+      <a href="legal.html">Privacy Policy</a>
+    </div>
+    <span class="webdev">Crafted by Firstview Lettings Ltd</span>
+  </footer>
+  <script>
+    var d = new Date();
+    document.getElementById("year").innerHTML = d.getFullYear();
+  </script>
+
+</body>
+
+</html>

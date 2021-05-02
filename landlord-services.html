@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ross Kendall-Selwyn">
+  <meta name="description" content="Are you a landlord looking for property management services? We can help you! We offer Letting Management Services, Tenancy Application Processing and more.">
+  <meta name="keywords" content="Nottingham, Derby, Lettings, Homes to rent, flats to rent, letting management, rightmove, tenant application processing, tenant introduction services">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/firstview-lettings.min.css">
+
+  <link rel="stylesheet" href="stylesheets/keyframes.css">
+  <title>Landlord Services | Firstview Lettings</title>
+  <link rel="shortcut icon" type="image/png" href="images/keys-logo.png">
+
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="cookie-container">
+      <p>
+        We use cookies in this website for tracking and performance purposes. To find out more, read our
+        <a href="legal.html">privacy policy</a>. By continuing to use this site you consent to the use of cookies.
+      </p>
+
+      <button class="cookie-btn">
+        I accept
+      </button>
+    </div>
+    <header >
+      <div><a href="firstview-lettings-home.html"><img src="images/main-logo.jpg" id="main-logo" alt="firstview lettings logo"></a></div>
+      <nav class="nav flex-row flex-sm-row" aria-label="mainnav">
+        <a id="home" class="flex-sm-fill text-sm-center nav-link active" href="firstview-lettings-home.html">Home</a>
+        <a id="properties" class="flex-sm-fill text-sm-center nav-link" href="properties.html">Properties</a>
+        <div id="tenants" class="btn-group">
+          <a role="button" class="btn" href="tenant-services.html">Tenants</a>
+
+        </div>
+        <div id="landlords" class="btn-group">
+          <a role="button" class="btn current" href="landlord-services.html">Landlords</a>
+
+        </div>
+        <div class="dropdown">
+          <button id="services-tab" class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menu &#9776;
+          </button>
+          <div class="dropdown-menu" aria-labelledby="services-tab">
+            <a class="dropdown-item" href="firstview-lettings-home.html">Home</a>
+            <a class="dropdown-item current" href="landlord-services.html">Landlord Services</a>
+            <a class="dropdown-item" href="tenant-services.html">Tenant Services</a>
+            <a class="dropdown-item" href="properties.html">Properties</a>
+            <a class="dropdown-item" href="about-firstview-lettings.html">About</a>
+            <a class="dropdown-item" href="php/index-contact.php">Contact</a>
+          </div>
+        </div>
+        <a id="about" class="flex-sm-fill text-sm-center nav-link" href="about-firstview-lettings.html">About</a>
+        <a id="contact" class="hide-sm flex-sm-fill text-sm-center nav-link" href="php/index-contact.php">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <div class="landlord-landing">
+        <div>
+          <h1 class="services-index">Landlord Services</h1>
+        </div>
+      </div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="cstandard">
+          <h1 class="display-4">Have a property you'd like to let?</h1>
+          <p class="lead">Finding the right tenant can be stressful, but it doesn't need to be!<br>With our experience we can help find great tenants for your property. With hundreds of site vistors and expert guidance we can help you save time and
+            money.</p>
+        </div>
+      </div>
+      <div data-aos="fade-down" data-aos-duration="2000">
+        <div class="landlord-card cstandard">
+          <div>
+            <h2 class="landlordcard-heading">Tenancy Applications</h2>
+            <p>We'll handle the tenancy application process on your behalf, collecting references and performing background checks. Credit history information is provided by specialised agencies to Firstview Lettings for your peace of mind. </p>
+            <span><b>Read More Below</b></span>
+          </div>
+          <div>
+            <h2 class="landlordcard-heading">Tenant Introduction Service</h2>
+            <!-- <span>Looking to connect with tenants?</span> -->
+            <p>Acting as a matchmaker - We'll help find the perfect tenants for your property, using our network and expertise.</p>
+            <span><b>Read More Below</b></span>
+          </div>
+          <div>
+            <h2 class="landlordcard-heading">Tenant Introduction Service & Inventory Preparation Services</h2>
+            <p>This is an accessory to the Tenant Introduction service, whereby Firstview Lettings Ltd will also prepare an itemised inventory schedule of the fixtures, fittings and condition of the Landlords property.</p>
+            <span><b>Read More Below</b></span>
+          </div>
+          <div>
+            <h2 class="landlordcard-heading">Letting Management Service</h2>
+            <p>Firstview Lettings will provide management services for the property over the duration of the let period, or by arrangement, the continuous selection and provision of suitable tenants over an agreed period.</p>
+            <span><b>Read More Below</b></span>
+          </div>
+        </div>
+      </div>
+      <div class="accordion cstandard" id="landlordAccordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Tenancy Applications
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#landlordAccordion">
+            <div class="card-body">
+              <p>Applications are assessed based on
+                <!-- satisfactory responses to enquiries about --> the applicants credit history and their
+                <!-- In addition, employers, bank and personal --> references.
+                <!-- will also be required to support the tenants application. In
+                some circumstances, --> A guarantor may be required in order that the tenants application is acceptable.</p>
+              <p>Credit history information is provided by specialised agencies who charge Firstview Lettings for this information. The charge for checking the applicants credit history is included in the <b>Application Fee</b>.</p>
+              <p>Both tenant and landlord will be required to enter into an Assured Shorthold Tenancy Agreement with each other and which will be prepared by Firstview Lettings Ltd. Typically, such agreements have an initial minimum fixed term of 6
+                months
+                duration. The preparation of an Inventory Schedule itemising the condition of the fixtures and fittings within the property is strongly recommended.</p>
+              <p><b>Initial Payment</b> The tenant cannot be given the keys to a property
+                <!-- for which a tenancy application is successful --> until the initial payment due to the landlord has been received by Firstview Lettings and has been cleared through the
+                banking system. The initial payment is an amount equal to the first months rent plus a deposit bond of six weeks rent. The bond will be held by the Landlord as security against exceptional wear and tear or dilapidations in the
+                condition of
+                the property over the let period for which the tenant is responsible, and/or any other costs incurred by the Landlord which are the tenants responsibility under the agreement.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Tenant Introduction Services
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#landlordAccordion">
+            <div class="card-body">
+              <p>Tenants for properties featured on the Firstview Lettings website will be identified primarily via this website. Other methods of advertising, such as newspaper adverts may be used from time to time but the intention of such
+                advertising
+                methods is to promote the existence of this website only, and not necessarily to advertise individual featured properties. Our <b>charge</b> therefore reflects the cost of providing this type of service.</p>
+              <p> Firstview Lettings will act as a matchmaker and will connect tenants looking for homes to rent with landlords which have properties that meet the tenants requirements.</p>
+              <!-- <p>The suitability of the proposed tenant will be assessed based on acceptable credit references provided by specialised tenant referencing agencies. In addition, employers, bank and personal references will also be required to support the
+                tenants application. In some circumstances, a guarantor may be necessary in order that the tenants application is acceptable.</p> -->
+              <!-- <p>Both Tenant and Landlord will be required to enter into an Assured Shorthold Tenancy Agreement with each other and which will be prepared by Firstview Lettings Ltd. Typically, such agreements have an initial minimum fixed term of 6 months
+                duration. The preparation of an Inventory schedule itemising the condition of the fixtures and fittings within the property is strongly recommended.</p> -->
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Inventory Preparation Services
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#landlordAccordion">
+            <div class="card-body">
+              <p>This option is an <b>accessory to the Tenant Introduction service</b>, whereby Firstview Lettings Ltd will also prepare an itemised inventory schedule of the fixtures, fittings and condition of the Landlords property. Our <b>charge</b> for
+                this service varies depending on the type of property.</p>
+              <p>The inventory is an important part of the tenancy agreement made between the landlord and the tenant as it provides them both with a record of the contents and condition of the landlords property at the outset of the tenancy. Each
+                has a copy which has been signed by both parties so that the schedule is accepted as an accurate account.</p>
+              <p>In case a dispute should arise with respect to any costs incurred by the landlord that are the tenants responsibility under the agreement, or a dispute regarding the condition of the landlords property and the amount of the deposit
+                to be paid back to the tenant at the termination of the tenancy, an accurate inventory will provide a record for both parties to refer back to when trying to resolve the dispute.
+              <p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Letting Management Services
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#landlordAccordion">
+            <div class="card-body">
+              <p>Firstview Lettings will provide management services for the property over the duration of the let period, or by arrangement, the continuous selection and provision of suitable tenants over an agreed period.</p>
+              <p>For a monthly <b>charge</b>, the service provided comprises property condition inspections and verifying the receipt of rent payments.</p>
+              <p>If the Letting Management Service is not required at the commencement of the tenancy, this service option can be provided later if the Landlords circumstances change.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cstandard red-line block hide-sm">
+        <h3>Tenancy Applications</h3>
+        <p>Applications are assessed based on
+          <!-- satisfactory responses to enquiries about --> the applicants credit history and their
+          <!-- In addition, employers, bank and personal --> references.
+          <!-- will also be required to support the tenants application. In
+          some circumstances, --> A guarantor may be required in order that the tenants application is acceptable.</p>
+        <p>Credit history information is provided by specialised agencies who charge Firstview Lettings for this information. The charge for checking the applicants credit history is included in the <b>Application Fee</b>.</p>
+        <p>Both tenant and landlord will be required to enter into an Assured Shorthold Tenancy Agreement with each other and which will be prepared by Firstview Lettings Ltd. Typically, such agreements have an initial minimum fixed term of 6 months
+          duration. The preparation of an Inventory Schedule itemising the condition of the fixtures and fittings within the property is strongly recommended.</p>
+        <p><b>Initial Payment</b> The tenant cannot be given the keys to a property
+          <!-- for which a tenancy application is successful --> until the initial payment due to the landlord has been received by Firstview Lettings and has been cleared through the
+          banking system. The initial payment is an amount equal to the first months rent plus a deposit bond of six weeks rent. The bond will be held by the Landlord as security against exceptional wear and tear or dilapidations in the condition of
+          the property over the let period for which the tenant is responsible, and/or any other costs incurred by the Landlord which are the tenants responsibility under the agreement.</p>
+      </div>
+
+      <div class="cstandard block hide-sm" id="tenant-introduction-services">
+        <h3>Tenant Introduction Services</h3>
+        <p>Tenants for properties featured on the Firstview Lettings website will be identified primarily via this website. Other methods of advertising, such as newspaper adverts may be used from time to time but the intention of such advertising
+          methods is to promote the existence of this website only, and not necessarily to advertise individual featured properties. Our <b>charge</b> therefore reflects the cost of providing this type of service.</p>
+        <p> Firstview Lettings will act as a matchmaker and will connect tenants looking for homes to rent with landlords which have properties that meet the tenants requirements.</p>
+        <!-- <p>The suitability of the proposed tenant will be assessed based on acceptable credit references provided by specialised tenant referencing agencies. In addition, employers, bank and personal references will also be required to support the
+          tenants application. In some circumstances, a guarantor may be necessary in order that the tenants application is acceptable.</p> -->
+        <!-- <p>Both Tenant and Landlord will be required to enter into an Assured Shorthold Tenancy Agreement with each other and which will be prepared by Firstview Lettings Ltd. Typically, such agreements have an initial minimum fixed term of 6 months
+          duration. The preparation of an Inventory schedule itemising the condition of the fixtures and fittings within the property is strongly recommended.</p> -->
+      </div>
+      <div class="cstandard red-line block hide-sm">
+        <h3>Inventory Preparation Services</h3>
+        <p>This option is an <b>accessory to the Tenant Introduction service</b>, whereby Firstview Lettings Ltd will also prepare an itemised inventory schedule of the fixtures, fittings and condition of the Landlords property. Our <b>charge</b> for this
+          service varies depending on the type of property.</p>
+        <p>The inventory is an important part of the tenancy agreement made between the landlord and the tenant as it provides them both with a record of the contents and condition of the landlords property at the outset of the tenancy. Each has a
+          copy which has been signed by both parties so that the schedule is accepted as an accurate account.</p>
+        <p>In case a dispute should arise with respect to any costs incurred by the landlord that are the tenants responsibility under the agreement, or a dispute regarding the condition of the landlords property and the amount of the deposit to be
+          paid back to the tenant at the termination of the tenancy, an accurate inventory will provide a record for both parties to refer back to when trying to resolve the dispute.
+        <p>
+      </div>
+      <div class="cstandard block hide-sm">
+        <h3>Letting Management Services</h3>
+        <p>Firstview Lettings will provide management services for the property over the duration of the let period, or by arrangement, the continuous selection and provision of suitable tenants over an agreed period.</p>
+        <p>For a monthly <b>charge</b>, the service provided comprises property condition inspections and verifying the receipt of rent payments.</p>
+        <p>If the Letting Management Service is not required at the commencement of the tenancy, this service option can be provided later if the Landlords circumstances change.</p>
+      </div>
+      <div class="cta cstandard">
+        <a class="view-cta" href="php/index-contact.php">Contact Us</a>
+      </div>
+
+    </main>
+
+  </div>
+  <footer class="main-footer">
+    <div>
+      <span>Enquiries</span><br>
+      <a href="tel:07834342897">07834 342897</a><br>
+      <a href="mailto:firstview.let@btinternet.com">firstview.let@btinternet.com</a>
+    </div>
+    <span>
+      Firstview Lettings Ltd.<br>
+      Registration No: 5098005<br>
+      Registered Office:<br>
+      367B Church Rd, Frampton Cotterell,<br>
+      Bristol, BS36 2AQ
+    </span>
+    <span id="copy">&copy; Firstview Lettings Ltd 2004-<span id="year"></span>.</span>
+    <div>
+      <a href="legal.html" id="legal">Legal Notices</a><br>
+      <a href="sitemap.html">Sitemap</a>
+    </div>
+    <span class="webdev">Created by Firstview Lettings Ltd</span>
+  </footer>
+  <script>
+    var d = new Date();
+    document.getElementById("year").innerHTML = d.getFullYear();
+  </script>
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="javascript/cookiescript.js"></script>
+</body>
+
+</html>
