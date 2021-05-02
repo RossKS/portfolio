@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="127px" height="176px" viewBox="0 0 127 176" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Untitled</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#FFFFFF" fill="#7A7777" x="0.5" y="74.5" width="126" height="101"></rect>
+        <text id="STERLING-BUILDS-INC." font-family="Gulim" font-size="21" font-weight="normal" fill="#FAF5F5">
+            <tspan x="7" y="107">STERLING </tspan>
+            <tspan x="7" y="128">BUILDS </tspan>
+            <tspan x="7" y="149">INC.</tspan>
+        </text>
+        <path d="M63.5,0.781024968 L124.932479,74.5 L2.06752081,74.5 L63.5,0.781024968 Z" id="Triangle" stroke="#FFFFFF" fill="#7A7777"></path>
+    </g>
+</svg>
