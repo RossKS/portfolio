@@ -1,0 +1,153 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#frame {
+  margin: 0, 10px;
+  min-height: 100vh;
+}
+
+body {
+  letter-spacing: 1.5px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  padding: 12px;
+  height: 100px;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  background-image: url("sterling-logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  /* border: solid 3px grey; */
+}
+
+h1 {
+  color: black;
+  padding: 10px;
+  font-size: 2em;
+  float: right;
+}
+
+.gallery {
+  height: 250px;
+  width: 90%;
+  background-color: grey;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: height 2s;
+}
+
+.gallery:nth-child(1) {
+  background-image: url("kitchen.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery:last-of-type {
+  margin-bottom: 36px;
+}
+
+.gallery:hover {
+  height: 350px;
+}
+
+.gallery:hover>.caption {
+  visibility: visible;
+  color: white;
+  font-size: 24px;
+}
+
+#about {
+  width: 60%;
+  font-weight: 200;
+  font-size: 1.25em;
+  color: black;
+  padding: 12px 0px;
+}
+
+section, footer {
+  margin: 28px 0px;
+  padding: 12px 0px;
+}
+
+.subheading {
+  padding: 12px;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+#contact_details, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
+}
+
+a {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.25em;
+  padding: 12px;
+}
+
+p {
+  text-align: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+}
+
+.caption {
+  visibility: hidden;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+
+svg {
+  height: 30px;
+}
+
+#copyright {
+  font-weight: 200;
+  padding: 20px 0px;
+}
+
+main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* @media (maxwidth 374px) {
+h1, h2 {
+  text-align: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+} */
