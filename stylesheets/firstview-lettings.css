@@ -25,7 +25,7 @@ main {
 }
 
 .slide1 {
-  background-image: url("../images/key-in-door.jpg");
+  background-image: url("../fv-images/key-in-door.jpg");
   background-position: center;
   height: 450px;
   background-size: cover;
@@ -33,14 +33,14 @@ main {
 }
 
 .slide2 {
-  background-image: url("../images/frontdoors.jpg");
+  background-image: url("../fv-images/frontdoors.jpg");
   height: 450px;
   background-size: cover;
   margin: 0;
 }
 
 .slide3 {
-  background-image: url("../images/rooftops.jpg");
+  background-image: url("../fv-images/rooftops.jpg");
   height: 450px;
   background-size: cover;
   margin: 0;
@@ -153,7 +153,7 @@ nav .current {
 }
 
 .services-landing, .landlord-landing {
-  background-image: url("../images/oxford-houses-colorful.jpg");
+  background-image: url("../fv-images/oxford-houses-colorful.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -163,7 +163,7 @@ nav .current {
 }
 
 .landlord-landing {
-  background-image: url("../images/rooftops.jpg");
+  background-image: url("../fv-images/rooftops.jpg");
   color: #fff;
   background-color: #e9ecef;
 }
