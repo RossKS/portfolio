@@ -7,6 +7,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  letter-spacing: 1.25px;
 }
 /*
 @font-face {
@@ -100,8 +101,8 @@ section:nth-of-type(even) {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background-color: #eee;
-  color: var(--grey);
+  /* background-color: #eee; */
+  /* color: var(--grey); */
 }
 
 .project-number {
@@ -118,8 +119,8 @@ section:nth-of-type(even) {
   flex-direction: row;
   flex-wrap: wrap;
   line-height: 30px;
-  background-color: #eee;
-  color: var(--grey);
+  /* background-color: #eee; */
+  /* color: var(--grey); */
   justify-content: space-between;
   margin: 0 auto;
   width: 90%;
@@ -135,7 +136,7 @@ h3 {
   font-family: "Source Code Pro", sans-serif;
 }
 
-.firstview a, #project2 > div a {
+.firstview a, #project2 > div a, #sterling-pics a {
   text-decoration: none;
   padding: 6px 8px;
   border: 1px solid #b4008c;
@@ -145,7 +146,7 @@ h3 {
   box-shadow: 1px 3px 8px 0.2px #393e46;
 }
 
-.firstview a:hover, footer a:hover, section:nth-of-type(3) a:hover {
+.firstview a:hover, footer a:hover, section:nth-of-type(3) a:hover, #sterling-pics a:hover, #project2 a:hover {
   color: #b4008c;
   background-color: #eee;
 }
@@ -184,7 +185,7 @@ section:nth-of-type(2)  p {
 }
 
 section:nth-of-type(3) {
-  padding-bottom: 50px;
+
   margin-top: 50px;
 }
 
@@ -212,7 +213,7 @@ footer {
 
 footer div{
   width: 100%;
-  background: #eee;
+  /* background: #eee; */
   font-family: 'Overpass', sans-serif;
   padding: 1.3em;
   min-height: 250px;
@@ -221,6 +222,7 @@ footer div{
 
 footer h2 {
   padding: 1.2em;
+  color: white;
 }
 
 footer a {
@@ -238,6 +240,29 @@ footer a {
 footer a:active {
   background-color: var(--grey);
   color: #eee;
+}
+
+#sterling-pics {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 90%;
+  justify-content: space-between;
+  margin: 0 auto 50px;
+}
+
+#sterling-pics > div {
+  /* text-align: center; */
+  padding: 16px;
+  line-height: 35px;
+}
+
+section:nth-of-type(2) p {
+  padding: 16px;
+  line-height: 30px;
+}
+section:nth-of-type(even) p {
+  float: right;
+  width: 60%;
 }
 
 
